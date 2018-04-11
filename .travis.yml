@@ -1,0 +1,56 @@
+language: swift
+osx_image: xcode9.3
+cache:
+  directories:
+  - Carthage
+before_install:
+- brew outdated carthage || brew upgrade carthage
+- brew outdated swiftlint || brew upgrade swiftlint
+before_script:
+- rm -rf ~/Library/Developer/Xcode/DerivedData
+- carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM
+- if [ $COVERAGE == "YES" ]; then
+    gem install slather;
+    curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter;
+    chmod +x ./cc-test-reporter;
+    ./cc-test-reporter before-build;
+  fi
+script:
+  - set -o pipefail
+  - xcodebuild clean
+  - xcodebuild build -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES SWIFT_VERSION=$SWIFT_VERSION | xcpretty
+  - if [ $TESTING == "YES" ]; then
+      xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES SWIFT_VERSION=$SWIFT_VERSION | xcpretty;
+    fi
+  - if [ $COVERAGE == "YES" ]; then
+      slather coverage -x -t --scheme $SCHEME_NAME $PROJECT_NAME;
+    fi
+after_script:
+  - if [ $COVERAGE == "YES" ]; then
+      ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT -t cobertura;
+    fi
+env:
+  global:
+  - PROJECT_NAME: JKStringAttributes.xcodeproj
+  - CC_TEST_REPORTER_ID: 46d76ca7311c69d38d52db9bcc6e8b2035a6cc5ce7cefec790518e63624238dd
+  - secure: bgfDWokw1jHX4KTcJgO1ZTX7mx7TJpsaWfRLHnwdpBkxtWLup5uH2U04SonIQ9BmXrPWMkOx00ZztjcQp6MLm7M0W14GqmiTLPWPVSMBnupf2SrR5HG4nNO6qUFy65H7aJjL9uO4ud5CyFpaolpI2qdYJlwvAHMdDV3w3y8V2gs/Pv8iD6A18Xtjg+hhaulwqxNmIbFZ6WewDMx+8P3e7WzOiHGnsTrMEOzZvHuBrkr47YMSw9wBlI/+heuuhU5OPtkxYCirY3pUkBeZZgC5DaG/Bk81ToJm8yUsDTor5/omuQ3uI4ApNwQfvVrMWC/7gbZD2JoAmPcVrlHjBlNju0wovOyXFO8h6fQ9xXGQmw7KeTcZ9/l3jgUssKS00SVzNTwdeyNUYjAK/8FNZ46EjMNx8E+QMjZE8yGy7Zt7inJmOG+61XMEv/dNZQ7WBKjjIAaNXtZB9vM0AQEqmUWxGayGEAtJA9K3hGxaKpHGuLD+XPKS1X7iT0COt8gme9ah99EqZVkSJRX+zS9WP0svAJuJc7rAicjkwrGTAV8dL7yj3vbQjTzQrw/B5KUWBLIzwBaYZlD/pfBMPgtsIuh8PfdbSE1tthuJ07dxpmv4/9n6K+lMcYc1h6KkLs6YakRiubEZ/0+1U6B1LERZdlcPDG/KNFAsJSkNqaxgEw2Z1jg=
+  matrix:
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone X,OS=11.3" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone X,OS=11.3" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="3.0"
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone 7 Plus,OS=11.3" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone 6,OS=10.3.1" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone 5s,OS=9.3" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_iOS" DESTINATION="name=iPhone 4s,OS=8.3" CARTHAGE_PLATFORM="ios" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+
+  - SCHEME_NAME="JKStringAttributes_macOS" DESTINATION="arch=x86_64" CARTHAGE_PLATFORM="macos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_macOS" DESTINATION="arch=x86_64" CARTHAGE_PLATFORM="macos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="3.0"
+
+  - SCHEME_NAME="JKStringAttributes_tvOS" DESTINATION="name=Apple TV 4K,OS=11.3" CARTHAGE_PLATFORM="tvos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_tvOS" DESTINATION="name=Apple TV 4K,OS=11.3" CARTHAGE_PLATFORM="tvos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="3.0"
+  - SCHEME_NAME="JKStringAttributes_tvOS" DESTINATION="name=Apple TV 1080p,OS=10.2" CARTHAGE_PLATFORM="tvos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_tvOS" DESTINATION="name=Apple TV 1080p,OS=9.2" CARTHAGE_PLATFORM="tvos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+
+  - SCHEME_NAME="JKStringAttributes_watchOS" DESTINATION="name=Apple Watch - 42mm,OS=4.3" CARTHAGE_PLATFORM="watchos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_watchOS" DESTINATION="name=Apple Watch - 42mm,OS=4.3" CARTHAGE_PLATFORM="watchos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="3.0"
+  - SCHEME_NAME="JKStringAttributes_watchOS" DESTINATION="name=Apple Watch - 42mm,OS=3.2" CARTHAGE_PLATFORM="watchos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
+  - SCHEME_NAME="JKStringAttributes_watchOS" DESTINATION="name=Apple Watch - 38mm,OS=2.2" CARTHAGE_PLATFORM="watchos" TESTING="NO" COVERAGE="NO" SWIFT_VERSION="4.0"
