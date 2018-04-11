@@ -78,4 +78,9 @@ return theCurrentAttributes
 }
 #endif
 
+  public init(font aFont: UIFont, fontColor aColor: UIColor) {
+    font = aFont
+    fontColor = aColor
+  }
+
 }

@@ -26,56 +26,61 @@ public struct JKStringAttributes {
   public var shadow: NSShadow?
 #endif
 #if swift(>=4)
-public var attributes: [NSAttributedStringKey: Any] {
-var theCurrentAttributes: [NSAttributedStringKey: Any] = [:]
+  public var attributes: [NSAttributedStringKey: Any] {
+    var theCurrentAttributes: [NSAttributedStringKey: Any] = [:]
 
-theCurrentAttributes[.font] = font
-theCurrentAttributes[.foregroundColor] = fontColor
+    theCurrentAttributes[.font] = font
+    theCurrentAttributes[.foregroundColor] = fontColor
 
-theCurrentAttributes[.baselineOffset] = baseLineOffset
+    theCurrentAttributes[.baselineOffset] = baseLineOffset
 
-theCurrentAttributes[.backgroundColor] = backgroundColor
+    theCurrentAttributes[.backgroundColor] = backgroundColor
 
-theCurrentAttributes[.paragraphStyle] = paragraphStyle
+    theCurrentAttributes[.paragraphStyle] = paragraphStyle
 
-theCurrentAttributes[.strikethroughStyle] = strikeThroughStyle?.rawValue
-theCurrentAttributes[.strokeColor] = strokeColor
-theCurrentAttributes[.strokeWidth] = strokeWidth
-theCurrentAttributes[.underlineStyle] = underlineStyle
-theCurrentAttributes[.underlineStyle] = underlineColor
-
-#if !os(watchOS)
-theCurrentAttributes[.shadow] = shadow
-#endif
-
-return theCurrentAttributes
-}
-#else
-
-  public var attributes:[String:Any] {
-    var theCurrentAttributes:[String:Any] = [:]
-
-    theCurrentAttributes[NSFontAttributeName] = font
-    theCurrentAttributes[NSForegroundColorAttributeName] = fontColor
-
-    theCurrentAttributes[NSBaselineOffsetAttributeName] = baseLineOffset
-
-    theCurrentAttributes[NSBackgroundColorAttributeName] = backgroundColor
-
-    theCurrentAttributes[NSParagraphStyleAttributeName] = paragraphStyle
-
-    theCurrentAttributes[NSStrikethroughStyleAttributeName] = strikeThroughStyle?.rawValue
-    theCurrentAttributes[NSStrokeColorAttributeName] = strokeColor
-    theCurrentAttributes[NSStrokeWidthAttributeName] = strokeWidth
-    theCurrentAttributes[NSUnderlineStyleAttributeName] = underlineStyle
-    theCurrentAttributes[NSUnderlineColorAttributeName] = underlineColor
+    theCurrentAttributes[.strikethroughStyle] = strikeThroughStyle?.rawValue
+    theCurrentAttributes[.strokeColor] = strokeColor
+    theCurrentAttributes[.strokeWidth] = strokeWidth
+    theCurrentAttributes[.underlineStyle] = underlineStyle
+    theCurrentAttributes[.underlineStyle] = underlineColor
 
 #if !os(watchOS)
-    theCurrentAttributes[NSShadowAttributeName] = shadow
+    theCurrentAttributes[.shadow] = shadow
 #endif
 
     return theCurrentAttributes
   }
+#else
+
+public var attributes:[String:Any] {
+var theCurrentAttributes:[String:Any] = [:]
+
+theCurrentAttributes[NSFontAttributeName] = font
+theCurrentAttributes[NSForegroundColorAttributeName] = fontColor
+
+theCurrentAttributes[NSBaselineOffsetAttributeName] = baseLineOffset
+
+theCurrentAttributes[NSBackgroundColorAttributeName] = backgroundColor
+
+theCurrentAttributes[NSParagraphStyleAttributeName] = paragraphStyle
+
+theCurrentAttributes[NSStrikethroughStyleAttributeName] = strikeThroughStyle?.rawValue
+theCurrentAttributes[NSStrokeColorAttributeName] = strokeColor
+theCurrentAttributes[NSStrokeWidthAttributeName] = strokeWidth
+theCurrentAttributes[NSUnderlineStyleAttributeName] = underlineStyle
+theCurrentAttributes[NSUnderlineColorAttributeName] = underlineColor
+
+#if !os(watchOS)
+theCurrentAttributes[NSShadowAttributeName] = shadow
 #endif
+
+return theCurrentAttributes
+}
+#endif
+
+  public init(font aFont: NSFont, fontColor aColor: NSColor) {
+    font = aFont
+    fontColor = aColor
+  }
 
 }
