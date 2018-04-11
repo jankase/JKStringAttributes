@@ -793,6 +793,7 @@
 		1DABBAF2207D0E5100370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				INFOPLIST_FILE = JKStringAttributesTests/Info.plist;
@@ -811,6 +812,7 @@
 		1DABBAF3207D0E5100370B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				INFOPLIST_FILE = JKStringAttributesTests/Info.plist;
@@ -939,6 +941,7 @@
 		1DABBB1B207D0EDE00370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				INFOPLIST_FILE = JKStringAttributes_tvOSTests/Info.plist;
@@ -959,6 +962,7 @@
 		1DABBB1C207D0EDE00370B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				INFOPLIST_FILE = JKStringAttributes_tvOSTests/Info.plist;
@@ -979,7 +983,7 @@
 		1DABBB34207D0F2500370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1007,7 +1011,7 @@
 		1DABBB35207D0F2500370B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1035,7 +1039,7 @@
 		1DABBB37207D0F2500370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
@@ -1056,7 +1060,7 @@
 		1DABBB38207D0F2500370B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
