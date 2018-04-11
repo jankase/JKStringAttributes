@@ -8,7 +8,6 @@ before_install:
 - brew outdated swiftlint || brew upgrade swiftlint
 before_script:
 - rm -rf ~/Library/Developer/Xcode/DerivedData
-- carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM
 - if [ $COVERAGE == "YES" ]; then
     gem install slather;
     curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter;
