@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0F97F6207E57BF0011AF66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97F5207E57BF0011AF66 /* UIKit.framework */; };
+		1D0F97F8207E57D00011AF66 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97F7207E57D00011AF66 /* WatchKit.framework */; };
+		1D0F97FA207E57D90011AF66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97F9207E57D90011AF66 /* UIKit.framework */; };
+		1D0F97FC207E57E30011AF66 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97FB207E57E30011AF66 /* AppKit.framework */; };
 		1DABBAE4207D0E5100370B9A /* JKStringAttributes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */; };
 		1DABBAE9207D0E5100370B9A /* JKStringAttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABBAE8207D0E5100370B9A /* JKStringAttributesTests.swift */; };
 		1DABBAEB207D0E5100370B9A /* JKStringAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABBADD207D0E5100370B9A /* JKStringAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0F97F5207E57BF0011AF66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1D0F97F7207E57D00011AF66 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		1D0F97F9207E57D90011AF66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1D0F97FB207E57E30011AF66 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKStringAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DABBADD207D0E5100370B9A /* JKStringAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKStringAttributes.h; sourceTree = "<group>"; };
 		1DABBADE207D0E5100370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0F97F6207E57BF0011AF66 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0F97F8207E57D00011AF66 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0F97FA207E57D90011AF66 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D0F97FC207E57E30011AF66 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +147,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0F97F4207E57BE0011AF66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D0F97FB207E57E30011AF66 /* AppKit.framework */,
+				1D0F97F9207E57D90011AF66 /* UIKit.framework */,
+				1D0F97F7207E57D00011AF66 /* WatchKit.framework */,
+				1D0F97F5207E57BF0011AF66 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1DABBAD0207D0E5100370B9A = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +171,7 @@
 				1DABBADB207D0E5100370B9A /* Products */,
 				931ADBA8529A21940C0AB546 /* Common */,
 				931AD4FC54A6F41D1A64FF74 /* .travis.yml */,
+				1D0F97F4207E57BE0011AF66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
