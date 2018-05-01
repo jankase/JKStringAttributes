@@ -11,4 +11,11 @@ extension NSAttributedString {
     self.init(string: aString, attributes: anAttributes.attributes)
   }
 
+  public convenience init?(string aString: String?, attributes anAttributes: JKStringAttributes) {
+    guard let theString = aString else {
+      return nil
+    }
+    self.init(string: theString, attributes: anAttributes)
+  }
+
 }

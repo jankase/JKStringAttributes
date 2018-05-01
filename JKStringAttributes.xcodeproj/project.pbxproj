@@ -11,15 +11,9 @@
 		1D0F97F8207E57D00011AF66 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97F7207E57D00011AF66 /* WatchKit.framework */; };
 		1D0F97FA207E57D90011AF66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97F9207E57D90011AF66 /* UIKit.framework */; };
 		1D0F97FC207E57E30011AF66 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F97FB207E57E30011AF66 /* AppKit.framework */; };
-		1DABBAE4207D0E5100370B9A /* JKStringAttributes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */; };
-		1DABBAE9207D0E5100370B9A /* JKStringAttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABBAE8207D0E5100370B9A /* JKStringAttributesTests.swift */; };
 		1DABBAEB207D0E5100370B9A /* JKStringAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABBADD207D0E5100370B9A /* JKStringAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DABBAFD207D0EB400370B9A /* JKStringAttribbutes_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABBAFB207D0EB400370B9A /* JKStringAttribbutes_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DABBB0F207D0EDE00370B9A /* JKStringAttributes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DABBB06207D0EDE00370B9A /* JKStringAttributes.framework */; };
-		1DABBB14207D0EDE00370B9A /* JKStringAttributes_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABBB13207D0EDE00370B9A /* JKStringAttributes_tvOSTests.swift */; };
 		1DABBB16207D0EDE00370B9A /* JKStringAttributes_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABBB08207D0EDE00370B9A /* JKStringAttributes_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DABBB2B207D0F2500370B9A /* JKStringAttributes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DABBB22207D0F2400370B9A /* JKStringAttributes.framework */; };
-		1DABBB30207D0F2500370B9A /* JKStringAttributes_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABBB2F207D0F2500370B9A /* JKStringAttributes_macOSTests.swift */; };
 		1DABBB32207D0F2500370B9A /* JKStringAttributes_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABBB24207D0F2500370B9A /* JKStringAttributes_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		931AD3393BD0BEF4A6EA0839 /* NSAttributedString+StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB4D9697C5CE21D03991 /* NSAttributedString+StringAttributes.swift */; };
 		931AD4DDEB35B9D70ED3B360 /* NSAttributedString+StringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB4D9697C5CE21D03991 /* NSAttributedString+StringAttributes.swift */; };
@@ -31,30 +25,6 @@
 		931ADFCAEBFBA1ACBACE7ADC /* JKStringAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD88AEF7338AAC7B610A3 /* JKStringAttributes.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1DABBAE5207D0E5100370B9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1DABBAD1207D0E5100370B9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DABBAD9207D0E5100370B9A;
-			remoteInfo = JKStringAttributes;
-		};
-		1DABBB10207D0EDE00370B9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1DABBAD1207D0E5100370B9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DABBB05207D0EDE00370B9A;
-			remoteInfo = JKStringAttributes_tvOS;
-		};
-		1DABBB2C207D0F2500370B9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1DABBAD1207D0E5100370B9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1DABBB21207D0F2400370B9A;
-			remoteInfo = JKStringAttributes_macOS;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1D0F97F5207E57BF0011AF66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1D0F97F7207E57D00011AF66 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,24 +33,15 @@
 		1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKStringAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DABBADD207D0E5100370B9A /* JKStringAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKStringAttributes.h; sourceTree = "<group>"; };
 		1DABBADE207D0E5100370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DABBAE3207D0E5100370B9A /* JKStringAttributesTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKStringAttributesTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DABBAE8207D0E5100370B9A /* JKStringAttributesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKStringAttributesTests.swift; sourceTree = "<group>"; };
-		1DABBAEA207D0E5100370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DABBAF9207D0EB300370B9A /* JKStringAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKStringAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DABBAFB207D0EB400370B9A /* JKStringAttribbutes_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKStringAttribbutes_watchOS.h; sourceTree = "<group>"; };
 		1DABBAFC207D0EB400370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DABBB06207D0EDE00370B9A /* JKStringAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKStringAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DABBB08207D0EDE00370B9A /* JKStringAttributes_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKStringAttributes_tvOS.h; sourceTree = "<group>"; };
 		1DABBB09207D0EDE00370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DABBB0E207D0EDE00370B9A /* JKStringAttributes_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKStringAttributes_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DABBB13207D0EDE00370B9A /* JKStringAttributes_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKStringAttributes_tvOSTests.swift; sourceTree = "<group>"; };
-		1DABBB15207D0EDE00370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DABBB22207D0F2400370B9A /* JKStringAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKStringAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DABBB24207D0F2500370B9A /* JKStringAttributes_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKStringAttributes_macOS.h; sourceTree = "<group>"; };
 		1DABBB25207D0F2500370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DABBB2A207D0F2500370B9A /* JKStringAttributes_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKStringAttributes_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DABBB2F207D0F2500370B9A /* JKStringAttributes_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKStringAttributes_macOSTests.swift; sourceTree = "<group>"; };
-		1DABBB31207D0F2500370B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931AD0A2533770044747F540 /* JKStringAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKStringAttributes.swift; sourceTree = "<group>"; };
 		931AD4FC54A6F41D1A64FF74 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		931AD88AEF7338AAC7B610A3 /* JKStringAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKStringAttributes.swift; sourceTree = "<group>"; };
@@ -93,14 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D0F97F6207E57BF0011AF66 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DABBAE0207D0E5100370B9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBAE4207D0E5100370B9A /* JKStringAttributes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,27 +73,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DABBB0B207D0EDE00370B9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBB0F207D0EDE00370B9A /* JKStringAttributes.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DABBB1E207D0F2400370B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D0F97FC207E57E30011AF66 /* AppKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DABBB27207D0F2500370B9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBB2B207D0F2500370B9A /* JKStringAttributes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,12 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				1DABBADC207D0E5100370B9A /* JKStringAttributes */,
-				1DABBAE7207D0E5100370B9A /* JKStringAttributesTests */,
 				1DABBAFA207D0EB400370B9A /* JKStringAttribbutes_watchOS */,
 				1DABBB07207D0EDE00370B9A /* JKStringAttributes_tvOS */,
-				1DABBB12207D0EDE00370B9A /* JKStringAttributes_tvOSTests */,
 				1DABBB23207D0F2500370B9A /* JKStringAttributes_macOS */,
-				1DABBB2E207D0F2500370B9A /* JKStringAttributes_macOSTests */,
 				1DABBADB207D0E5100370B9A /* Products */,
 				931ADBA8529A21940C0AB546 /* Common */,
 				931AD4FC54A6F41D1A64FF74 /* .travis.yml */,
@@ -179,12 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */,
-				1DABBAE3207D0E5100370B9A /* JKStringAttributesTests_iOS.xctest */,
 				1DABBAF9207D0EB300370B9A /* JKStringAttributes.framework */,
 				1DABBB06207D0EDE00370B9A /* JKStringAttributes.framework */,
-				1DABBB0E207D0EDE00370B9A /* JKStringAttributes_tvOSTests.xctest */,
 				1DABBB22207D0F2400370B9A /* JKStringAttributes.framework */,
-				1DABBB2A207D0F2500370B9A /* JKStringAttributes_macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,15 +127,6 @@
 				1DABBADE207D0E5100370B9A /* Info.plist */,
 			);
 			path = JKStringAttributes;
-			sourceTree = "<group>";
-		};
-		1DABBAE7207D0E5100370B9A /* JKStringAttributesTests */ = {
-			isa = PBXGroup;
-			children = (
-				1DABBAE8207D0E5100370B9A /* JKStringAttributesTests.swift */,
-				1DABBAEA207D0E5100370B9A /* Info.plist */,
-			);
-			path = JKStringAttributesTests;
 			sourceTree = "<group>";
 		};
 		1DABBAFA207D0EB400370B9A /* JKStringAttribbutes_watchOS */ = {
@@ -225,15 +147,6 @@
 			path = JKStringAttributes_tvOS;
 			sourceTree = "<group>";
 		};
-		1DABBB12207D0EDE00370B9A /* JKStringAttributes_tvOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				1DABBB13207D0EDE00370B9A /* JKStringAttributes_tvOSTests.swift */,
-				1DABBB15207D0EDE00370B9A /* Info.plist */,
-			);
-			path = JKStringAttributes_tvOSTests;
-			sourceTree = "<group>";
-		};
 		1DABBB23207D0F2500370B9A /* JKStringAttributes_macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,15 +155,6 @@
 				931AD0A2533770044747F540 /* JKStringAttributes.swift */,
 			);
 			path = JKStringAttributes_macOS;
-			sourceTree = "<group>";
-		};
-		1DABBB2E207D0F2500370B9A /* JKStringAttributes_macOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				1DABBB2F207D0F2500370B9A /* JKStringAttributes_macOSTests.swift */,
-				1DABBB31207D0F2500370B9A /* Info.plist */,
-			);
-			path = JKStringAttributes_macOSTests;
 			sourceTree = "<group>";
 		};
 		931ADBA8529A21940C0AB546 /* Common */ = {
@@ -318,24 +222,6 @@
 			productReference = 1DABBADA207D0E5100370B9A /* JKStringAttributes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1DABBAE2207D0E5100370B9A /* JKStringAttributesTests_iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DABBAF1207D0E5100370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributesTests_iOS" */;
-			buildPhases = (
-				1DABBADF207D0E5100370B9A /* Sources */,
-				1DABBAE0207D0E5100370B9A /* Frameworks */,
-				1DABBAE1207D0E5100370B9A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DABBAE6207D0E5100370B9A /* PBXTargetDependency */,
-			);
-			name = JKStringAttributesTests_iOS;
-			productName = JKStringAttributesTests;
-			productReference = 1DABBAE3207D0E5100370B9A /* JKStringAttributesTests_iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1DABBAF8207D0EB300370B9A /* JKStringAttribbutes_watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DABBAFE207D0EB400370B9A /* Build configuration list for PBXNativeTarget "JKStringAttribbutes_watchOS" */;
@@ -372,24 +258,6 @@
 			productReference = 1DABBB06207D0EDE00370B9A /* JKStringAttributes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1DABBB0D207D0EDE00370B9A /* JKStringAttributes_tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DABBB1A207D0EDE00370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_tvOSTests" */;
-			buildPhases = (
-				1DABBB0A207D0EDE00370B9A /* Sources */,
-				1DABBB0B207D0EDE00370B9A /* Frameworks */,
-				1DABBB0C207D0EDE00370B9A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DABBB11207D0EDE00370B9A /* PBXTargetDependency */,
-			);
-			name = JKStringAttributes_tvOSTests;
-			productName = JKStringAttributes_tvOSTests;
-			productReference = 1DABBB0E207D0EDE00370B9A /* JKStringAttributes_tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		1DABBB21207D0F2400370B9A /* JKStringAttributes_macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DABBB33207D0F2500370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_macOS" */;
@@ -408,24 +276,6 @@
 			productReference = 1DABBB22207D0F2400370B9A /* JKStringAttributes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1DABBB29207D0F2500370B9A /* JKStringAttributes_macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DABBB36207D0F2500370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_macOSTests" */;
-			buildPhases = (
-				1DABBB26207D0F2500370B9A /* Sources */,
-				1DABBB27207D0F2500370B9A /* Frameworks */,
-				1DABBB28207D0F2500370B9A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DABBB2D207D0F2500370B9A /* PBXTargetDependency */,
-			);
-			name = JKStringAttributes_macOSTests;
-			productName = JKStringAttributes_macOSTests;
-			productReference = 1DABBB2A207D0F2500370B9A /* JKStringAttributes_macOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -439,22 +289,13 @@
 					1DABBAD9207D0E5100370B9A = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					1DABBAE2207D0E5100370B9A = {
-						CreatedOnToolsVersion = 9.3;
-					};
 					1DABBAF8207D0EB300370B9A = {
 						CreatedOnToolsVersion = 9.3;
 					};
 					1DABBB05207D0EDE00370B9A = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					1DABBB0D207D0EDE00370B9A = {
-						CreatedOnToolsVersion = 9.3;
-					};
 					1DABBB21207D0F2400370B9A = {
-						CreatedOnToolsVersion = 9.3;
-					};
-					1DABBB29207D0F2500370B9A = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -475,22 +316,12 @@
 				1DABBAF8207D0EB300370B9A /* JKStringAttribbutes_watchOS */,
 				1DABBB05207D0EDE00370B9A /* JKStringAttributes_tvOS */,
 				1DABBB21207D0F2400370B9A /* JKStringAttributes_macOS */,
-				1DABBAE2207D0E5100370B9A /* JKStringAttributesTests_iOS */,
-				1DABBB0D207D0EDE00370B9A /* JKStringAttributes_tvOSTests */,
-				1DABBB29207D0F2500370B9A /* JKStringAttributes_macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1DABBAD8207D0E5100370B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DABBAE1207D0E5100370B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,21 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DABBB0C207D0EDE00370B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DABBB20207D0F2400370B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DABBB28207D0F2500370B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,14 +358,6 @@
 			files = (
 				931ADF85DE7A146E1E3D720C /* JKStringAttributes.swift in Sources */,
 				931ADEDB2501D79BA148A716 /* NSAttributedString+StringAttributes.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1DABBADF207D0E5100370B9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBAE9207D0E5100370B9A /* JKStringAttributesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,14 +379,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DABBB0A207D0EDE00370B9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBB14207D0EDE00370B9A /* JKStringAttributes_tvOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1DABBB1D207D0F2400370B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,33 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DABBB26207D0F2500370B9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DABBB30207D0F2500370B9A /* JKStringAttributes_macOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1DABBAE6207D0E5100370B9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1DABBAD9207D0E5100370B9A /* JKStringAttributes_iOS */;
-			targetProxy = 1DABBAE5207D0E5100370B9A /* PBXContainerItemProxy */;
-		};
-		1DABBB11207D0EDE00370B9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1DABBB05207D0EDE00370B9A /* JKStringAttributes_tvOS */;
-			targetProxy = 1DABBB10207D0EDE00370B9A /* PBXContainerItemProxy */;
-		};
-		1DABBB2D207D0F2500370B9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1DABBB21207D0F2400370B9A /* JKStringAttributes_macOS */;
-			targetProxy = 1DABBB2C207D0F2500370B9A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DABBAEC207D0E5100370B9A /* Debug */ = {
@@ -790,44 +565,6 @@
 			};
 			name = Release;
 		};
-		1DABBAF2207D0E5100370B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = eu.jkdev.JKStringAttributesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1DABBAF3207D0E5100370B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = eu.jkdev.JKStringAttributesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		1DABBAFF207D0EB400370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -938,48 +675,6 @@
 			};
 			name = Release;
 		};
-		1DABBB1B207D0EDE00370B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributes_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.JKStringAttributes-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.3;
-			};
-			name = Debug;
-		};
-		1DABBB1C207D0EDE00370B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributes_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.JKStringAttributes-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.3;
-			};
-			name = Release;
-		};
 		1DABBB34207D0F2500370B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1036,48 +731,6 @@
 			};
 			name = Release;
 		};
-		1DABBB37207D0F2500370B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributes_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.JKStringAttributes-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		1DABBB38207D0F2500370B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8WS8N285FL;
-				INFOPLIST_FILE = JKStringAttributes_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.JKStringAttributes-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1095,15 +748,6 @@
 			buildConfigurations = (
 				1DABBAEF207D0E5100370B9A /* Debug */,
 				1DABBAF0207D0E5100370B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DABBAF1207D0E5100370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributesTests_iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DABBAF2207D0E5100370B9A /* Debug */,
-				1DABBAF3207D0E5100370B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1126,29 +770,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DABBB1A207D0EDE00370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DABBB1B207D0EDE00370B9A /* Debug */,
-				1DABBB1C207D0EDE00370B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1DABBB33207D0F2500370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DABBB34207D0F2500370B9A /* Debug */,
 				1DABBB35207D0F2500370B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1DABBB36207D0F2500370B9A /* Build configuration list for PBXNativeTarget "JKStringAttributes_macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DABBB37207D0F2500370B9A /* Debug */,
-				1DABBB38207D0F2500370B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

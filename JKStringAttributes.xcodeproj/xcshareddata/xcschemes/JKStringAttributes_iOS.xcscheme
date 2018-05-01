@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DABBAE2207D0E5100370B9A"
-               BuildableName = "JKStringAttributesTests_iOS.xctest"
-               BlueprintName = "JKStringAttributesTests_iOS"
-               ReferencedContainer = "container:JKStringAttributes.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
